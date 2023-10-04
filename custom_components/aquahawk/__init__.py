@@ -52,8 +52,3 @@ async def async_unload_entry(
         hass.data[DOMAIN].pop(entry.entry_id)
 
     return unload_ok
-
-
-async def async_setup(hass: core.HomeAssistant, config: dict) -> bool:
-    hass.data.setdefault(DOMAIN, {})
-    return True
