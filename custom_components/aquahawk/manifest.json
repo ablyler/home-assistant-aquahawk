@@ -1,0 +1,11 @@
+{
+  "codeowners": ["@ablyler"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/ablyler/home-assistant-aquahawk",
+  "domain": "aquahawk",
+  "iot_class": "cloud_polling",
+  "name": "AquaHawk",
+  "requirements": ["aquahawk-client==0.0.1rc8"],
+  "version": "0.0.1"
+}
