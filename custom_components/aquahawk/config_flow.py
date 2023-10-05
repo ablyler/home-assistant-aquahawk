@@ -38,8 +38,7 @@ async def validate_auth(
 
     Raises a ValueError if the auth token is invalid.
     """
-    session = async_get_clientsession(hass)
-    aquahawk = AquaHawkClient(account_number, hostname, username, password, session)
+    aquahawk = AquaHawkClient(account_number, hostname, username, password)
     try:
         aquahawk.authenticate()
     except AuthenticationError:

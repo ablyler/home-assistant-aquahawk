@@ -62,41 +62,17 @@ async def async_setup_entry(
     # Update our config to include new repos and remove those that have been removed.
     if config_entry.options:
         config.update(config_entry.options)
-    session = async_get_clientsession(hass)
     aquahawk = AquaHawkClient(
         config.get(CONF_ACCOUNT_NUMBER),
         config.get(CONF_HOSTNAME),
         config.get(CONF_USERNAME),
-        config.get(CONF_PASSWORD),
-        session,
+        config.get(CONF_PASSWORD)
     )
     sensors = [
         AquaHawkSensor(aquahawk, Period.PERIOD_TODAY),
         AquaHawkSensor(aquahawk, Period.PERIOD_THIS_YEAR),
     ]
 
-    async_add_entities(sensors, update_before_add=True)
-
-
-async def async_setup_platform(
-    hass: HomeAssistant,
-    config: ConfigType,
-    async_add_entities: AddEntitiesCallback,
-    discovery_info: Optional[DiscoveryInfoType] = None,
-) -> None:
-    """Set up the sensor platform."""
-    session = async_get_clientsession(hass)
-    aquahawk = AquaHawkClient(
-        config.get(CONF_ACCOUNT_NUMBER),
-        config.get(CONF_HOSTNAME),
-        config.get(CONF_USERNAME),
-        config.get(CONF_PASSWORD),
-        session,
-    )
-    sensors = [
-        AquaHawkSensor(aquahawk, Period.PERIOD_TODAY),
-        AquaHawkSensor(aquahawk, Period.PERIOD_THIS_YEAR),
-    ]
     async_add_entities(sensors, update_before_add=True)
 
 
