@@ -106,7 +106,7 @@ class AquaHawkSensor(SensorEntity):
             elif self.period == Period.PERIOD_TODAY:
                 usage = await self.aquahawk.get_usage_today()
 
-            self._attr_native_value = usage.timeseries[0].water_use.gallons
+            self._attr_native_value = usage.timeseries[-1].water_use.gallons
             self._attr_available = True
         except:
             self._attr_available = False
