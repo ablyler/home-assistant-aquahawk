@@ -6,6 +6,6 @@
   "dependencies": [],
   "documentation": "https://github.com/ablyler/home-assistant-aquahawk",
   "iot_class": "cloud_polling",
-  "requirements": ["aquahawk-client==0.0.1rc8"],
+  "requirements": ["aquahawk-client==0.0.1"],
   "version": "0.0.3"
 }
