@@ -40,7 +40,7 @@ Platform | Description
 
 ## Energy dashboard
 
-This integration supports energy dashboard. To enable it, go to `Settings -> Dashboards -> Energy`, click on `Add Water Source`, and select `AquaHawk Yearly`. Once added, you can see water usage in the energy dashboard.
+This integration supports energy dashboard. To enable it, go to `Settings -> Dashboards -> Energy`, click on `Add Water Source`, and select `AquaHawk Yearly` (using the daily sensor will not work correctly). Once added, you can see water usage in the energy dashboard.
 
 ## Troubleshooting
 
