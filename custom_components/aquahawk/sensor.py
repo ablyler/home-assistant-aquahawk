@@ -1,40 +1,27 @@
 """AquaHawk sensor platform."""
 import logging
 from datetime import timedelta
-from typing import Any, Callable, Dict, Optional
 
+import homeassistant.helpers.config_validation as cv
+import voluptuous as vol
 from aquahawk_client import AquaHawkClient
-
 from homeassistant import config_entries, core
-from homeassistant.core import HomeAssistant
 from homeassistant.components.sensor import (
     PLATFORM_SCHEMA,
     SensorDeviceClass,
     SensorEntity,
     SensorStateClass,
 )
-from homeassistant.const import (
-    UnitOfVolume,
-)
-from homeassistant.helpers.aiohttp_client import async_get_clientsession
-import homeassistant.helpers.config_validation as cv
-from homeassistant.helpers.entity import Entity
-from homeassistant.helpers.entity_platform import AddEntitiesCallback
-from homeassistant.helpers.typing import (
-    ConfigType,
-    DiscoveryInfoType,
-)
-import voluptuous as vol
+from homeassistant.const import UnitOfVolume
 
 from .const import (
-    DOMAIN,
     CONF_ACCOUNT_NUMBER,
     CONF_HOSTNAME,
     CONF_PASSWORD,
     CONF_USERNAME,
+    DOMAIN,
     Period,
 )
-
 
 _LOGGER = logging.getLogger(__name__)
 # Time between updating data from AquaHawk
@@ -66,7 +53,7 @@ async def async_setup_entry(
         config.get(CONF_ACCOUNT_NUMBER),
         config.get(CONF_HOSTNAME),
         config.get(CONF_USERNAME),
-        config.get(CONF_PASSWORD)
+        config.get(CONF_PASSWORD),
     )
     sensors = [
         AquaHawkSensor(aquahawk, Period.PERIOD_TODAY),
@@ -108,6 +95,8 @@ class AquaHawkSensor(SensorEntity):
 
             self._attr_native_value = usage.timeseries[-1].water_use.gallons
             self._attr_available = True
+        # trunk-ignore(flake8/E722)
+        # trunk-ignore(ruff/E722)
         except:
             self._attr_available = False
             _LOGGER.exception("Error retrieving data from AquaHawk")

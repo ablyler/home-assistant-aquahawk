@@ -1,19 +1,17 @@
 import logging
 from typing import Any, Dict, Optional
 
-from homeassistant import core, config_entries
 import homeassistant.helpers.config_validation as cv
-from homeassistant.helpers.aiohttp_client import async_get_clientsession
 import voluptuous as vol
-
 from aquahawk_client import AquaHawkClient, AuthenticationError
+from homeassistant import config_entries, core
 
 from .const import (
-    DOMAIN,
     CONF_ACCOUNT_NUMBER,
     CONF_HOSTNAME,
     CONF_PASSWORD,
     CONF_USERNAME,
+    DOMAIN,
 )
 
 _LOGGER = logging.getLogger(__name__)
@@ -33,7 +31,8 @@ async def validate_auth(
     hostname: str,
     username: str,
     password: str,
-    hass: core.HomeAssistant) -> None:
+    hass: core.HomeAssistant,
+) -> None:
     """Validates a GitHub access token.
 
     Raises a ValueError if the auth token is invalid.
@@ -41,8 +40,9 @@ async def validate_auth(
     aquahawk = AquaHawkClient(account_number, hostname, username, password)
     try:
         aquahawk.authenticate()
-    except AuthenticationError:
-        raise ValueError
+    except AuthenticationError as err:
+        raise ValueError from err
+
 
 class AquahawkConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     """AquaHawk Custom config flow."""
@@ -59,7 +59,7 @@ class AquahawkConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                     user_input[CONF_HOSTNAME],
                     user_input[CONF_USERNAME],
                     user_input[CONF_PASSWORD],
-                    self.hass
+                    self.hass,
                 )
             except ValueError:
                 errors["base"] = "auth"
@@ -72,4 +72,3 @@ class AquahawkConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         return self.async_show_form(
             step_id="user", data_schema=AUTH_SCHEMA, errors=errors
         )
-

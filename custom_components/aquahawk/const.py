@@ -5,6 +5,7 @@ DOMAIN = "aquahawk"
 CONF_HOSTNAME = "hostname"
 CONF_ACCOUNT_NUMBER = "account_number"
 CONF_USERNAME = "username"
+# trunk-ignore(bandit/B105)
 CONF_PASSWORD = "password"
 
 

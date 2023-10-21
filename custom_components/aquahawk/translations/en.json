@@ -1,19 +1,19 @@
 {
-    "config": {
-      "error": {
-        "auth": "The authentication failed."
-      },
-      "step": {
-        "user": {
-          "data": {
-            "hostname": "Hostname of AquaHawk instance (example: city.aquahawk.us)",
-            "account_number": "Account number of water account",
-            "username": "Username of AquaHawk account",
-            "password": "Password of AquaHawk account"
-          },
-          "description": "Enter your AquaHawk Details.",
-          "title": "Authentication"
-        }
+  "config": {
+    "error": {
+      "auth": "The authentication failed."
+    },
+    "step": {
+      "user": {
+        "data": {
+          "hostname": "Hostname of AquaHawk instance (example: city.aquahawk.us)",
+          "account_number": "Account number of water account",
+          "username": "Username of AquaHawk account",
+          "password": "Password of AquaHawk account"
+        },
+        "description": "Enter your AquaHawk Details.",
+        "title": "Authentication"
       }
     }
   }
+}
