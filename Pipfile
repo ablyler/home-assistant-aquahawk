@@ -4,15 +4,14 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-aquahawk-client==0.0.1
+aquahawk-client = "*"
 
 [dev-packages]
-pytest
-pytest-asyncio
-pytest-aiohttp
-pytest-cov==2.9.0
-pytest-homeassistant-custom-component
-
+pytest = "*"
+pytest-asyncio = "*"
+pytest-aiohttp = "*"
+pytest-cov = "*"
+pytest-homeassistant-custom-component = "*"
 
 [requires]
 python_version = "3.11"
