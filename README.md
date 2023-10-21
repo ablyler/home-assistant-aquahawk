@@ -38,6 +38,10 @@ Platform | Description
 `sensor` | Sensor for water usage today.
 `sensor` | Sensor for water usage this year.
 
+## Energy dashboard
+
+This integration supports energy dashboard. To enable it, go to `Settings -> Dashboards -> Energy`, click on `Add Water Source`, and select `AquaHawk Yearly`. Once added, you can see water usage in the energy dashboard.
+
 ## Troubleshooting
 
 If there are problems while using integration setup, an advanced debug logging can be activated via `Advanced settings` page.
