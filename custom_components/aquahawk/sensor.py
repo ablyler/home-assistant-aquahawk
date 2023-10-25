@@ -93,6 +93,11 @@ class AquaHawkSensor(SensorEntity):
             elif self.period == Period.PERIOD_TODAY:
                 usage = await self.aquahawk.get_usage_today()
 
+            # ensure usage is not None and that the last timeseries has a water_use
+            if usage is None or usage.timeseries[-1].water_use is None:
+                self._attr_available = False
+                return
+
             self._attr_native_value = usage.timeseries[-1].water_use.gallons
             self._attr_available = True
         # trunk-ignore(flake8/E722)
