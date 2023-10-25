@@ -13,8 +13,6 @@ Issues not containing the minimum requirements will be closed:
 
 -->
 
-<!-- trunk-ignore(markdownlint/MD041) -->
-
 ## Version of the custom_component
 
 <!-- If you are not using the newest version, download and try that before opening an issue
