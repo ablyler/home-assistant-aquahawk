@@ -1,9 +1,7 @@
 """AquaHawk sensor platform."""
-import logging
 from datetime import timedelta
+import logging
 
-import homeassistant.helpers.config_validation as cv
-import voluptuous as vol
 from aquahawk_client import AquaHawkClient
 from homeassistant import config_entries, core
 from homeassistant.components.sensor import (
@@ -13,6 +11,8 @@ from homeassistant.components.sensor import (
     SensorStateClass,
 )
 from homeassistant.const import UnitOfVolume
+import homeassistant.helpers.config_validation as cv
+import voluptuous as vol
 
 from .const import (
     CONF_ACCOUNT_NUMBER,

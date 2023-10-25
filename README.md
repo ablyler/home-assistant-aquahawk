@@ -1,4 +1,5 @@
 # home-assistant-aquahawk
+
 [![GitHub Release][releases-shield]][releases]
 [![hacs][hacsbadge]][hacs]
 
@@ -7,6 +8,7 @@ This custom component for Home Assistant adds support for for reading water usag
 ## Installation instruction
 
 ### HACS
+
 The easiest way to install this integration is with [HACS][hacs]. First, install [HACS][hacs-download] if you don't have it yet. In Home Assistant, go to `HACS -> Integrations`, click on `+ Explore & Download Repositories`, search for `AquaHawk`, and click download. After download, restart Home Assistant.
 
 Once the integration is installed, you can add it to the Home Assistant by going to `Configuration -> Devices & Services`, clicking `+ Add Integration` and searching for `AquaHawk` or, using My Home Assistant service, you can click on:
@@ -14,11 +16,13 @@ Once the integration is installed, you can add it to the Home Assistant by going
 [![Add AquaHawk][add-integration-badge]][add-integration]
 
 ### Manual installation
+
 1. Update Home Assistant to version 2021.12 or newer.
 2. Clone this repository.
 3. Copy the `custom_components/aquahawk` folder into your Home Assistant's `custom_components` folder.
 
 ### Configuring
+
 1. Add `AquaHawk` integration via UI.
 2. Enter AquaHawk cloud hostname, account id, username, and password.
 3. The integration will discover appliance on local network(s).
@@ -27,16 +31,16 @@ Once the integration is installed, you can add it to the Home Assistant by going
 
 ## Known issues
 
-* Sensor values are delayed due to the infrequent sending of data from the water meters to the cloud. The delay is usually many hours to a day in my experience.
+- Sensor values are delayed due to the infrequent sending of data from the water meters to the cloud. The delay is usually many hours to a day in my experience.
 
 ## Supported entities
 
 This custom component creates following entities for each discovered dehumidifier:
 
-Platform | Description
--- | --
-`sensor` | Sensor for water usage today.
-`sensor` | Sensor for water usage this year.
+| Platform | Description                       |
+| -------- | --------------------------------- |
+| `sensor` | Sensor for water usage today.     |
+| `sensor` | Sensor for water usage this year. |
 
 ## Energy dashboard
 
@@ -61,7 +65,7 @@ On entry page, paste following content:
 ```yaml
 service: logger.set_level
 data:
-    custom_components.aquahawk: DEBUG
+  custom_components.aquahawk: DEBUG
 ```
 
 It is possible to activate debug logging on Home Assistent start. To do this, open Home Assistant's `configuration.yaml` file on your machine, and add following to `logger` configuration:
@@ -75,9 +79,6 @@ logger:
 ```
 
 Home Assistant needs to be restarted after this change.
-
-
-
 
 ## Notice
 

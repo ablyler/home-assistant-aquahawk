@@ -12,17 +12,17 @@
   "customizations": {
     "vscode": {
       "extensions": [
-		"donjayamanne.python-environment-manager",
-		"esbenp.prettier-vscode",
-		"GitHub.copilot-chat",
-		"github.vscode-github-actions",
-		"GitHub.vscode-pull-request-github",
-		"ms-azuretools.vscode-docker",
-		"ms-python.python",
-		"redhat.vscode-yaml",
-		"visualstudioexptteam.vscodeintellicode",
-		"trunk.io"
-	]
+        "donjayamanne.python-environment-manager",
+        "esbenp.prettier-vscode",
+        "GitHub.copilot-chat",
+        "github.vscode-github-actions",
+        "GitHub.vscode-pull-request-github",
+        "ms-azuretools.vscode-docker",
+        "ms-python.python",
+        "redhat.vscode-yaml",
+        "visualstudioexptteam.vscodeintellicode",
+        "trunk.io"
+      ]
     }
   },
 

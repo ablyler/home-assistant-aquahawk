@@ -1,10 +1,10 @@
 import logging
 from typing import Any, Dict, Optional
 
-import homeassistant.helpers.config_validation as cv
-import voluptuous as vol
 from aquahawk_client import AquaHawkClient, AuthenticationError
 from homeassistant import config_entries, core
+import homeassistant.helpers.config_validation as cv
+import voluptuous as vol
 
 from .const import (
     CONF_ACCOUNT_NUMBER,
