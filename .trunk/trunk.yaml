@@ -2,11 +2,11 @@
 # To learn more about the format of this file, see https://docs.trunk.io/reference/trunk-yaml
 version: 0.1
 cli:
-  version: 1.17.1
+  version: 1.17.2
 plugins:
   sources:
     - id: trunk
-      ref: v1.2.6
+      ref: v1.3.0
       uri: https://github.com/trunk-io/plugins
 runtimes:
   enabled:
@@ -14,6 +14,8 @@ runtimes:
     - python@3.10.8
 lint:
   enabled:
+    - checkov@3.1.9
+    - trivy@0.47.0
     - hadolint@2.12.0
     - markdownlint@0.37.0
     - actionlint@1.6.26
@@ -22,13 +24,13 @@ lint:
     - flake8@6.1.0
     - git-diff-check
     - isort@5.12.0
-    - mypy@1.6.1
-    - osv-scanner@1.4.1
-    - prettier@3.0.3
-    - ruff@0.1.1
+    - mypy@1.7.1
+    - osv-scanner@1.4.3
+    - prettier@3.1.0
+    - ruff@0.1.6
     - taplo@0.8.1
-    - trufflehog@3.60.0
-    - yamllint@1.32.0
+    - trufflehog@3.63.2-rc0
+    - yamllint@1.33.0
   ignore:
     - linters: [ALL]
       paths:
