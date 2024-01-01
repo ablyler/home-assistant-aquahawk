@@ -4,10 +4,11 @@
   "name": "Python 3",
   "image": "mcr.microsoft.com/devcontainers/python:1-3.11-bullseye",
   "features": {
-    "ghcr.io/devcontainers-contrib/features/pipenv:2": {},
     "ghcr.io/devcontainers-contrib/features/apt-packages:1": {
       "packages": ["direnv"]
-    }
+    },
+    "ghcr.io/devcontainers-contrib/features/pipenv:2": {},
+    "ghcr.io/trunk-io/devcontainer-feature/trunk:1": {}
   },
   "customizations": {
     "vscode": {
@@ -33,7 +34,7 @@
   // "forwardPorts": [],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "curl https://get.trunk.io -fsSL | bash -s -- -y && PIPENV_VENV_IN_PROJECT=1 pipenv install -d"
+  "postCreateCommand": "YPIPENV_VENV_IN_PROJECT=1 pipenv install -d"
 
   // Configure tool-specific properties.
   // "customizations": {},
