@@ -645,11 +645,11 @@
         },
         "bluetooth-auto-recovery": {
             "hashes": [
-                "sha256:1040aa81e31398dba971028c8663ba2555b28e4396efe56dee2f199977c3057b",
-                "sha256:a131166f2486e484b5257371cd416f2bf1c6b32a897db0ad29fe11c1eb2a40f5"
+                "sha256:36ebf08e7cf44e35c15175323aed91e1bf2418792a4c3f76165d16d0f437614b",
+                "sha256:f804c59f1302830f9343f96bf0d150e6e51983e951ecd7ffe6f28d2286932717"
             ],
             "markers": "python_version >= '3.9' and python_version < '4.0'",
-            "version": "==1.2.3"
+            "version": "==1.3.0"
         },
         "bluetooth-data-tools": {
             "hashes": [
@@ -1206,52 +1206,52 @@
         },
         "habluetooth": {
             "hashes": [
-                "sha256:01042de78ce05e662c2394f2616f02ae4072a64df8ae83610cde811420984b47",
-                "sha256:0fff260d8baa800182143f489f9e2bf054d1734393e20b1e8393bcc90406ab5f",
-                "sha256:17a28ee3158a255192845e9067ee4979b98630e4d4d328e18bcb8cba0c3b0b5a",
-                "sha256:2e13dd58ba8bbd749c0bdb3ff1746e711a1161d2e578f6cb7de096c0ad4f3abb",
-                "sha256:36472e7a052233eedd7364890ff2e76933579e3167fa1726bcaf978a1c4c1856",
-                "sha256:3e131ee8f12c29fb32f51d50fe4ad878ae252c64b4386ef3ea0a3665605215a1",
-                "sha256:504ba9a8cba38d7137cb876920775a046e8880d4ab51dee593d9998f711271e0",
-                "sha256:681d718dd5f5263d7dea828f51e5963ec9db3cc9b7631ae6a102f6f7b90c251f",
-                "sha256:698a6cc6fb0cb996ccddc0f0f302107d6dd93248b70b23f42ff54f58074389ad",
-                "sha256:6cb2c77ad3e8c193157e4f201b825ff63c0e04b00392cdf8635bf7167c7227c7",
-                "sha256:8190ac37b021e7edf99e7968d0be7b617c2419d92eb3a706bfbc4bbd3c9a1774",
-                "sha256:820b2001c266a9bc9840ab5b08a00a85bc1d3df0f2645ca7f998f8a2bfaa3f10",
-                "sha256:8e30f6fc90ef5bbb2504c843a4cbdce69bb1818ba4fa155fe867dd5d5d3c71ff",
-                "sha256:98a9a62bb3a4ad86b3de02dcb2b31f9b0ef7f12f2b82cee3ae227f790aae4e65",
-                "sha256:a996604430c3d97901ac3331712927e7f32861df3fa505b8ee73448099b15497",
-                "sha256:ac9fd696dc35f4e3a9cc85d7b51c619891c4d6070b684604b74efdc02e8d4d06",
-                "sha256:c75542a3aa397aa9045217a86ec83c22e6ae1671ed4026d0e8c00a75d7b6f96f",
-                "sha256:c91413e63bf71e958f2de29cef2596cddb29047c8b0074b6c9c283fde1e6c46b",
-                "sha256:d46850376833bbd36abbf49ba6199eb754d731924028a58b91d48a5cfa057508",
-                "sha256:d7f4cc53ba79b99ba8461128166d1453a851f64f4c39b78bfe8443337378b4a1",
-                "sha256:dab2a3f2b2bf28bbe8068c100a46c7f428fa452aa9ace63903ea891bf40d3246",
-                "sha256:dd93e549376c854ae9d2113d351f880d67e7eba8cc8a19534cbbd5aeb017f295",
-                "sha256:e4d2764fce635d512d01f98e4f287442efd5b8dc759dbd346d84a710887e543d",
-                "sha256:e61893522b0305e16a244dcfb2292d0bb6f6a6603923658f33a36b9ae779524a",
-                "sha256:ebf651ae6a6950da6d88a166458ceffc0a96d8cf3a90e50183db8a05c52f2442",
-                "sha256:fdabf5ad9db3c72819e3031168b5372988d4f313da195d61e0ab6c3136dbc866",
-                "sha256:fde406bd9eac30067cd9b277629fe96ec53e446502cd56edd0ecc3b57a922bd8"
+                "sha256:003dcb6394b06ecb76b622e07ef0d66570c5bf55307cc54a0b0886c4fe174802",
+                "sha256:076d1dd9240a983d6ea60ced98dba5e55015ac039462e639cb3c5bcbae101a9e",
+                "sha256:0f289708788ff7735ad32e63fde7827f435a25166eef84193fbd2f1d082a14ad",
+                "sha256:134562a06bb16a2c8b8a99dd0d0b1d88388478d6a5eb9e8f3826d76c01f65de8",
+                "sha256:13d81dcdc63be75d932c70e6b62a0faf1dea4c616be4852ed9ee4c4b69d0dc6e",
+                "sha256:1bc811aba8d0524df4574f17d0b9c3418068ab0c132060f85c3cce8577e49dbd",
+                "sha256:1be517372c3788fe3eb47ec3b6588da961b7811e522a1aa960f504583132ffc3",
+                "sha256:2afbd0564b6bb38dd0ec90ea3b63d159c05d917d1cade95367fc561549e5ba59",
+                "sha256:42570c9459564ce14aa008dcd6f2d2722bb987a301d391e25de0a71a01ae0383",
+                "sha256:472f374e23f49dcff7b2b4b0ff63b891300a217d475cd84addc7579e751cb474",
+                "sha256:596f0cc9dd7dedc2e93a7ed39fd81cbecd32af0fb4b704e6c8aa657ff936e030",
+                "sha256:6bb73712dd88181485c15bfd3ee13d279e455a13196e09f9b112fc93de07f338",
+                "sha256:6f9e1a6d7dbc3d7bead822db6fc9bb585a2d4b91523d306d119ad408a68ac056",
+                "sha256:7d9113009de74e1bfa4ebf85ee325d375a1bbb6f224b4b3680791564071444e2",
+                "sha256:971654936dfcd07003cd954ba28f5f947af59c55af07951c1bd9866894db5c8d",
+                "sha256:a2f117f44e9bee89ec9e971f05873ac5ad69b3728330a628000155b8a4b54a67",
+                "sha256:ab8dfc0e1532610347a07fef2a5b29dee217c42b4daca3a070d2f36d2c552240",
+                "sha256:b110797a071dc6cb23e63f0fad1b596b8d857f437347bb2763e284c9e9703b36",
+                "sha256:b7fa4b34eb7f57dcbb8762ce9c59f2bfd06c8f697c08ee27afacf6dfd49d7f59",
+                "sha256:c0dae2dbec2dbd52ece439d8967613625bd0f3fb17007e97d3da893fc1c18b8b",
+                "sha256:e10fcefa939466d2f936b9c1f3a986c7c6bccae0186def292516fc3c6eda139b",
+                "sha256:e3fa525f7c895a5f082d0e6fc2babf6a347b04d34463263ebbf7ceaad33a4daf",
+                "sha256:e9d369b1e1c7502d818f9bebb77e0dd7a1e358f8b6bafbf5e480c293e0ad06b3",
+                "sha256:ea02b9b2d09fc7f0e1174860314ab0ced8d9b93377d49406c7bbafc1d5bf458a",
+                "sha256:f0de72d1ec3295be2176b6972a4e3cf9c6ed1627d59ad85d3485feffee073d9c",
+                "sha256:f3c27f62fc529ed40698e4676a36eff92880d72d3159df464d611c1319678aeb",
+                "sha256:f7a4132da52987c28866133ebecae9e3f1d4c15bb6f3e01f481e3f58995d881a"
             ],
             "markers": "python_version >= '3.10' and python_version < '3.13'",
-            "version": "==2.0.2"
+            "version": "==2.2.0"
         },
         "home-assistant-bluetooth": {
             "hashes": [
-                "sha256:6530c39b4ae6712fff90137c0a3444648db7947bef583e26c4ee3f745d7853c3",
-                "sha256:75cc805917be2f7cad56bf19b7b2947d58c3919650634154e068f15b320f303d"
+                "sha256:9b3cea07e50f0521d805a3fef102a338aaeb532576f100844a155b890ac97381",
+                "sha256:9cac369fea11f67c1165df527f918a8c56630cbccb3c5cbe24b72f06aeb9f59b"
             ],
-            "markers": "python_version >= '3.10' and python_version < '3.13'",
-            "version": "==1.11.0"
+            "markers": "python_version >= '3.11' and python_version < '3.13'",
+            "version": "==1.12.0"
         },
         "homeassistant": {
             "hashes": [
-                "sha256:89c715bd96c926e186f4a7c4fb3ba36d8b2629d89d6f9ef9db745834256742bd",
-                "sha256:8a3b3d44dc75ec92349d21c2041df2b20acce0e74eb5c1fff7a3bd0dcad3b454"
+                "sha256:323d3469392e9a6b0fa54b50e62506f71389e2b6ba49fbbcba4970ae8317a32d",
+                "sha256:4f54b3dec0539eca5e2fa09f9a510222af82ce041f8aebdbd5f5732e558f3783"
             ],
             "markers": "python_full_version >= '3.11.0'",
-            "version": "==2024.1.2"
+            "version": "==2024.1.3"
         },
         "httpcore": {
             "hashes": [
@@ -1803,12 +1803,12 @@
         },
         "pytest-homeassistant-custom-component": {
             "hashes": [
-                "sha256:1a6ca3212200e3dd115029dc7e77a146fa0a5da788fb3a690ed9894ea1309f3d",
-                "sha256:76b6963ead6d43c60885b3e177edd788a6d7af3112b22be7b15902d2ad687a4f"
+                "sha256:027196a49c8f6359ce927c0fc209cbd7cfb9062d2b3f7503203484d28db27c17",
+                "sha256:f350e13e54590b8014a0d209bdb314f226df2eaed29af9587f0c2bfdeb1de271"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.11'",
-            "version": "==0.13.88"
+            "version": "==0.13.89"
         },
         "pytest-picked": {
             "hashes": [
