@@ -618,11 +618,11 @@
         },
         "awesomeversion": {
             "hashes": [
-                "sha256:16907305c091637e296966a70731345e70825fef1664fd1a72155ce83f2b6dc7",
-                "sha256:9146329196f0f045887de6c195730750f8f7a9302d1c149378db73ab5dc468f0"
+                "sha256:47a6dcbbe2921b725f75106a66ab30f26f1f33dbc5e07bc8e1e39d8eb921f53c",
+                "sha256:ba365d1ad4e42aa5afdbc46b639f349e52db2d859d7c46a34744ca15ebf1430a"
             ],
             "markers": "python_version >= '3.8' and python_version < '4.0'",
-            "version": "==23.11.0"
+            "version": "==24.2.0"
         },
         "bcrypt": {
             "hashes": [
@@ -1288,11 +1288,11 @@
         },
         "homeassistant": {
             "hashes": [
-                "sha256:15a8eba00c26932fd4c4482f530147dd2cf1c0c1e69e9e973f21b07a301a3468",
-                "sha256:ed57a4f220e380a8d95c18b1a9c982584f0df1641e3ced2ee5f616c59faab5ff"
+                "sha256:422021c9a6f68746a4d80b37224b2d46c7df71e1b04f65e5fb822313f997c665",
+                "sha256:88b087a037d9d60cfe2f137122228db120da2f64daabc0771eebb4d347974b17"
             ],
             "markers": "python_full_version >= '3.11.0'",
-            "version": "==2024.2.0b6"
+            "version": "==2024.2.1"
         },
         "httpcore": {
             "hashes": [
@@ -1860,12 +1860,12 @@
         },
         "pytest-homeassistant-custom-component": {
             "hashes": [
-                "sha256:73385111c25245b966726c5ecbd141c8d4bbf55f485f44145250614b86c832f0",
-                "sha256:dbc9a200c934be95845bb503c7f08a1d316bdbe75c159d48319180cc0eb6cb85"
+                "sha256:8d26c731524b5ac10d2f9675bb1e1daf0cbeb7c33858314a853cf4cff35ffed9",
+                "sha256:e0a96e22b8ece145e0654c57ce0cde7440d0f5ae1e6f34802e27f67918a22b24"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.11'",
-            "version": "==0.13.96"
+            "version": "==0.13.100"
         },
         "pytest-picked": {
             "hashes": [
