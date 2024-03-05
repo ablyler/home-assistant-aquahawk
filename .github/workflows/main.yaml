@@ -89,12 +89,33 @@ jobs:
           pipenv install
       - name: Run Trunk Check
         uses: trunk-io/trunk-action@v1
-      - name: Run Home Assistant hassfest
+
+  validate-hassfest:
+    runs-on: ubuntu-latest
+    name: Hassfest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+
+      - name: Validate Hassfest
         uses: home-assistant/actions/hassfest@master
+
+  validate-hacs:
+    runs-on: ubuntu-latest
+    name: HACS
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+
+      - name: Validate HACS
+        uses: hacs/action@main
+        with:
+          category: integration
+          ignore: brands
 
   release:
     name: GitHub (Pre)Release
-    needs: [meta]
+    needs: [meta, lint, validate-hassfest, validate-hacs]
     if: >-
       needs.meta.outputs.is_release == 'true' ||
       needs.meta.outputs.is_prerelease == 'true'
@@ -110,7 +131,7 @@ jobs:
 
   tags:
     name: Update Release Tags
-    needs: [meta, release]
+    needs: [meta, lint, validate-hassfest, validate-hacs, release]
     if: needs.meta.outputs.is_release == 'true'
     runs-on: ubuntu-latest
     permissions:
