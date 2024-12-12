@@ -11,6 +11,8 @@ This custom component for Home Assistant adds support for for reading water usag
 
 The easiest way to install this integration is with [HACS][hacs]. First, install [HACS][hacs-download] if you don't have it yet. In Home Assistant, go to `HACS -> Integrations`, click on `+ Explore & Download Repositories`, search for `AquaHawk`, and click download. After download, restart Home Assistant.
 
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=ablyler&repository=home-assistant-aquahawk&category=integration)
+
 Once the integration is installed, you can add it to the Home Assistant by going to `Configuration -> Devices & Services`, clicking `+ Add Integration` and searching for `AquaHawk` or, using My Home Assistant service, you can click on:
 
 [![Add AquaHawk][add-integration-badge]][add-integration]
