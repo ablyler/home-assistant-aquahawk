@@ -1,4 +1,5 @@
 """AquaHawk customer component."""
+
 import asyncio
 import logging
 

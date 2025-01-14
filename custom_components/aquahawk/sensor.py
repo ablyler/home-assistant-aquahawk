@@ -1,4 +1,5 @@
 """AquaHawk sensor platform."""
+
 from datetime import timedelta
 import logging
 
