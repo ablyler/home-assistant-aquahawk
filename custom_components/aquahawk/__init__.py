@@ -3,10 +3,13 @@ import asyncio
 import logging
 
 from homeassistant import config_entries, core
+from homeassistant.const import Platform
 
 from .const import DOMAIN
 
 _LOGGER = logging.getLogger(__name__)
+
+PLATFORMS: list[Platform] = [Platform.SENSOR]
 
 
 async def async_setup_entry(
@@ -21,10 +24,8 @@ async def async_setup_entry(
     hass_data["unsub_options_update_listener"] = unsub_options_update_listener
     hass.data[DOMAIN][entry.entry_id] = hass_data
 
-    # Forward the setup to the sensor platform.
-    hass.async_create_task(
-        hass.config_entries.async_forward_entry_setup(entry, "sensor")
-    )
+    await hass.config_entries.async_forward_entry_setups(entry, PLATFORMS)
+
     return True
 
 
