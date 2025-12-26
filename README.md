@@ -27,9 +27,6 @@ Once the integration is installed, you can add it to the Home Assistant by going
 
 1. Add `AquaHawk` integration via UI.
 2. Enter AquaHawk cloud hostname, account id, username, and password.
-3. The integration will discover appliance on local network(s).
-4. If an appliance is not automatically discovered, but is registered to the cloud account, user is prompted to enter IPv4 address of the appliance.
-5. If you want to use integration with air conditioner unit(s), please select the checkbox on `Advanced settings` page.
 
 ## Known issues
 
